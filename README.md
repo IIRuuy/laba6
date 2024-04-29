@@ -12,13 +12,13 @@
 
 Исходные данные – текст, содержащий данные заданного формата. Выходные данные – найденные выражения с указанием позиции начала. Возможно выделение подстрок в исходном тексте.
 
-1) 26 Построить РВ, описывающее СНИЛС.
+### 1) 26 Построить РВ, описывающее СНИЛС.
 `(\d{3}-\d{3}-\d{3} \d{2})+`
 
 ![FoundSnils](docs/NofFoundSnils.png)
 ![FoundSnils](docs/FoundSnils.png)
 
-2) 7 Построить РВ, описывающее номера карт, принадлежащих
+### 2) 7 Построить РВ, описывающее номера карт, принадлежащих
 платежной системе Amex Card.
 ` (\d{4}\d{6}\d{5})`
 
@@ -44,11 +44,12 @@ EXPRREM14 -> digit EXPRREM15
 EXPRREM15 -> digit EXPRREM16
 EXPRREM16 -> {0}
 ```
+![GraphMac](docs/graphCard.png)
 ![FoundSnils](docs/CardFound.png)
 ![FoundSnils](docs/CardNotFound.png)
 
-3) 4 Построить РВ, описывающее MAC-адрес.
-`[\d\w]{2}-[\d\w]{2}-[\d\w]{2}-[\d\w]{2}-[\d\w]{2}-[\d\w]{2}`
+### 3) 4 Построить РВ, описывающее MAC-адрес.
+`[\da-zA-Z]{2}-[\da-zA-Z]{2}-[\da-zA-Z]{2}-[\da-zA-Z]{2}-[\da-zA-Z]{2}-[\da-zA-Z]{2}`
 
 Грамматика:
 
@@ -75,5 +76,7 @@ EXPRREM16-> (leter | digit) EXPRREM17
 EXPRREM17-> (leter | digit) EXPRREM18
 EXPRREM18-> {0}
 ```
+![GraphMac](docs/graphMAC.png)
+
 ![FoundSnils](docs/FoundMac.png)
 ![FoundSnils](docs/NotFoundMac.png)
