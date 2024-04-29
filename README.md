@@ -42,7 +42,7 @@ EXPRREM11 -> digit EXPRREM12
 EXPRREM13 -> digit EXPRREM14
 EXPRREM14 -> digit EXPRREM15
 EXPRREM15 -> digit EXPRREM16
-EXPRREM18 -> {0}
+EXPRREM16 -> {0}
 ```
 ![FoundSnils](docs/CardFound.png)
 ![FoundSnils](docs/CardNotFound.png)
